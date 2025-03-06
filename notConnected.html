@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Seckonnect</title>
+</head>
+<body class="bg-primary-subtle">
+    <div class="container">
+     <!-- logo part -->
+    <div class="container">
+        <div id="logo" class="text-center">
+            <h1><i class="bi bi-broadcast-pin"></i>
+                <SPAN class="text-warning fw-bold">S</SPAN>EC<SPAN class="text-success fw-bold">k</SPAN>ONNECT</h1>
+        </div> 
+    </div>
+
+    <!-- header part-->
+        <div class="text-center m-5">
+            <div class="row text-light">
+              <div class="col bg-secondary rounded-5 p-2 m-2 shadow-lg">
+                <p><i class="bi bi-globe2 text-light"></i><b> wifi</b></p>
+                <p>status: <span class="ms-2 text-danger">Not Connected</span></p>
+                <p>ip: <span class="ms-2">Not Connected</span></p>
+                <p>SSID: <span class="ms-2">Not Connected</span></p>
+                <input type="text" class="form-control w-20 text-center" placeholder="Select a Network">
+                <input type="password" class="form-control w-20 text-center mt-1" placeholder="password">
+                
+                <button type="button" class="btn btn-primary m-2 shadow-lg">
+                    <a href="connecting.html" class="text-light"><i class="bi bi-wifi"></i> Connect wi-fi</a></button>
+                <p class="m-1"><i class="bi bi-arrow-clockwise"></i>Refresh</p>    
+              </div>
+              <div class="col bg-secondary rounded-5 p-2 m-2 shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="200" height="300" fill="#FF0000" class="bi bi-shield-fill-exclamation" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.54 1.54 0 0 0-1.044-1.263 63 63 0 0 0-2.887-.87C9.843.266 8.69 0 8 0m-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0M8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                  </svg>
+              </div>
+              <div class="col">
+                <div class="bg-secondary rounded-5 p-4 m-2 shadow-lg">
+                    <p><i class="bi bi-hdd-stack"></i> Server IP</p>
+                    <input type="password" class="form-control text-center mt-1" placeholder="Server IP">
+                <button type="button" class="btn btn-primary m-2"><i class="bi bi-floppy"></i>
+                    save</button>
+                </div>
+                <div class="bg-secondary rounded-5 p-3 m-2 shadow-lg">
+                    <p><i class="bi bi-shield"></i> LAN</p>
+                    <p>IP: Not Connected</p>
+                </div>
+              </div>
+                <!-- <div class="col align-self-end">
+                    Column
+                </div>            -->
+            </div>     
+    </div>
+
+
+    <!-- section part -->
+    <div class="d-flex flex-row m-3 justify-content-around text-light text-center">
+        <div class="p-2 bg-secondary rounded-5 w-25 m-1 shadow-lg">
+            <p><i class="bi bi-shield"></i><b> LAN</b></p>
+            <p>Status: <span class="text-danger">Not Active</span></p>
+        </div>
+        <div class="p-2 bg-secondary rounded-5 w-25 m-1 shadow-lg">
+            <p><i class="bi bi-wifi"></i><b> wi-fi</b></p>
+            <p>Status: <span class="text-danger">Not Active</span></p>
+        </div>
+        <div class="p-2 bg-secondary rounded-5 w-25 m-1 shadow-lg">
+            <p><i class="bi bi-globe2"></i><b> internet connectivity</b></p>
+            <p>Status: <span class="text-danger">Not Active</span></p>
+        </div>
+        <div class="p-2 bg-secondary rounded-5 w-25 m-1 shadow-lg">
+            <p><i class="bi bi-shield-lock"></i><b> Seckonnect status</b></p>
+            <p>Status: <span class="text-danger">Not Active</span></p>
+        </div>
+      </div>
+
+      <!-- footer part -->
+      <div class="container bg-secondary text-light rounded-3 shadow-lg" style="height: 30vh;">
+        <div class="d-flex col justify-content-between p-2">
+            <div><i class="bi bi-graph-up"></i> Graph Status</div>
+            <div>speed: <span class="text-danger">0.00</span></div>
+        </div>
+      </div>
+
+    </div>
+</body>
+</html>
